@@ -1,0 +1,36 @@
+/* Calculating hypotenuse */
+.triangle{
+    border: 2mm ridge rgb(112, 112, 203);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 800px;
+}
+span{
+    text-decoration: underline;
+    color:aqua;
+    cursor: pointer;
+}
+img{
+    width: 430px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.math{
+    position: absolute;
+    top: 300px;
+    right: 250px;
+
+}
+p,label,input,button{
+    font-size: 1.5em;
+}
+button{
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(50, 192, 140);
+    background-color: rgba(232, 83, 29, 0.575);
+}
+button:active{
+    background-color: rgb(103, 71, 11);
+}
