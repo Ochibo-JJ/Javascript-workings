@@ -26,11 +26,29 @@ img{
 p,label,input,button{
     font-size: 1.5em;
 }
-button{
+button#submitButton{
     margin-top: 10px;
-    box-shadow: 3px 3px 10px 3px rgb(50, 192, 140);
-    background-color: rgba(232, 83, 29, 0.575);
+    box-shadow: 1px 1px 5px 3px rgba(14, 202, 61, 0.564);
+    background-color: rgb(248, 238, 191);
 }
-button:active{
+button#submitButton:active{
     background-color: rgb(103, 71, 11);
+}
+#cLabel{
+    margin-left: 20px;
+}
+
+/* Counter program */
+.counter{
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+}
+label#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+.counter button{
+    margin-left: 10px;
 }
