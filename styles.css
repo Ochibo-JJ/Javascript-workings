@@ -52,3 +52,20 @@ label#countLabel{
 .counter button{
     margin-left: 10px;
 }
+
+/* Random number generator */
+.dice{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 2em;
+}
+.dice button{
+    color: white;
+    background-color: black;
+    box-shadow: 10px 5px 5px red;
+}
+.dice label{
+    display: block;
+    margin-top: 15px;
+}

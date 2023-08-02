@@ -39,3 +39,16 @@ document.getElementById("increaseBtn").onclick = function(){
 document.getElementById("submitBtn").onclick = function(){
    count = window.alert("Congratulations! You are " + count + " years old!");
 }
+
+//Random number generator
+let x;
+let y;
+let z;
+document.getElementById("rollButton").onclick = function () {
+   x = Math.floor(Math.random() * 6) + 1;
+   y = Math.floor(Math.random() * 6) + 1;
+   z = Math.floor(Math.random() * 6) + 1;
+   x = document.getElementById("xLabel").innerHTML = "1st dice:" + x;
+   y = document.getElementById("yLabel").innerHTML = "2nd dice:" + y;
+   z = document.getElementById("zLabel").innerHTML = "3rd dice:" + z;
+}
