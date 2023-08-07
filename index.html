@@ -9,17 +9,31 @@
 </head>
 <body>
     <!-- Calculating hypotenuse of a triangle -->
-    <div class="triangle">
+    <div class="math">
         <h1>Right-angled triangle</h1>
-        <p>Solve for <span><a href="#aTextbox">hypotenuse</a></span></p>
+        <p>Solve for <a href="#aTextbox">hypotenuse</a></p>
         <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SsN2DG__Z5DyOI0uf7hbwQ.png" alt="Pythagorus theorem">
-        <div class="math">
-            <label id="aLabel">Side A:</label><br>
+        <div class="triangle">
+            <label for="aTextbox" id="aLabel">Side A:</label><br>
             <input type="text" id="aTextbox"><br>
-            <label id="bLabel">Side B:</label><br>
+            <label for="bTextbox" id="bLabel">Side B:</label><br>
             <input type="text" id="bTextbox"><br>
             <button type="button" id="submitButton">Submit</button>
-            <label id="cLabel"></label><br>
+            <label id="cLabel"></label>
+        </div>
+
+        <div class="circumference">
+            <h1>Circumference(perimeter) of a circle</h1>
+            <p>Solve for <a href="#radius">circumference</a></p>
+            <div class="circle">
+                <div class="radiusLine"><p>R</p></div>
+            </div>
+            <div class="radCalc">
+                <label for="radiusTextbox" id="radius">Enter radius:</label><br>
+                <input type="text" id="radiusTextbox"><br>
+                <button type="button" id="circCalc">Submit</button><br>
+                <label id="circumfAns"></label>
+            </div>
         </div>
     </div><hr>
     <!-- Counter program -->

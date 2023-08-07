@@ -1,15 +1,21 @@
 /* Calculating hypotenuse */
-.triangle{
+.math{
     border: 2mm ridge rgb(112, 112, 203);
     border-radius: 10px;
     margin: 10px auto;
     padding: 10px;
     width: 800px;
 }
-span{
+a{
     text-decoration: underline;
-    color:aqua;
+    color:rgb(18, 96, 96);
     cursor: pointer;
+}
+a:hover{
+    color: aqua;
+}
+a:active{
+    color:blueviolet;
 }
 img{
     width: 430px;
@@ -17,11 +23,10 @@ img{
     margin: 10px;
     position: relative;
 }
-.math{
+.triangle{
     position: absolute;
     top: 300px;
     right: 250px;
-
 }
 p,label,input,button{
     font-size: 1.5em;
@@ -36,6 +41,43 @@ button#submitButton:active{
 }
 #cLabel{
     margin-left: 20px;
+}
+.circumference{
+    margin-top: 30px;
+    position: relative;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid darkblue;
+    display: inline-block;
+    position: relative;
+}
+.radiusLine{
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #0ce64d;
+}
+.radiusLine p{
+    font-size: 1.5em;
+    color: #de4e4e;
+    margin: 0;
+    transform: translate(60px, -30px);
+}
+.radCalc{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+#circCalc{
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px 3px rgb(188, 118, 175);
+    background-color: rgb(43, 51, 91);
+    color: white;
 }
 
 /* Counter program */

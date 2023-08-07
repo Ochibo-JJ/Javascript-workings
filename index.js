@@ -22,6 +22,16 @@
         document.getElementById("cLabel").innerHTML = "Hypotenuse is: " + c;
      }
 
+//calculating circumference
+     let radius;
+     let circumference;
+     document.getElementById("circCalc").onclick = function(){
+      radius = document.getElementById("radiusTextbox").value;
+      radius = Number(radius);
+      circumference = Math.round(Math.PI * radius);
+      document.getElementById("circumfAns").innerHTML = "Circumference is: " + circumference;
+     }
+
 //counter program
 let count = 0;
 document.getElementById("decreaseBtn").onclick = function(){
