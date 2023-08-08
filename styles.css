@@ -79,6 +79,9 @@ button#submitButton:active{
     background-color: rgb(43, 51, 91);
     color: white;
 }
+hr{
+    margin: 20px 0 20px;
+}
 
 /* Counter program */
 .counter{
@@ -110,4 +113,19 @@ label#countLabel{
 .dice label{
     display: block;
     margin-top: 15px;
+}
+/* nested loop */
+.nestedLoop{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+#myRect{
+    background-color: rgb(11, 83, 11);
+    color: bisque;
+    box-shadow: 0 0 5px lightgreen;
+}
+p#myRectangle{
+    color: forestgreen;
 }

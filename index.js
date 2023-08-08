@@ -47,7 +47,8 @@ document.getElementById("increaseBtn").onclick = function(){
    document.getElementById("countLabel").innerHTML = count+=1;
 }
 document.getElementById("submitBtn").onclick = function(){
-   count = window.alert("Congratulations! You are " + count + " years old!");
+   let name = window.prompt("What is your name?");
+   count = window.alert("Congratulations " + name + "! You are " + count + " years old!");
 }
 
 //Random number generator
@@ -61,4 +62,17 @@ document.getElementById("rollButton").onclick = function () {
    x = document.getElementById("xLabel").innerHTML = "1st dice:" + x;
    y = document.getElementById("yLabel").innerHTML = "2nd dice:" + y;
    z = document.getElementById("zLabel").innerHTML = "3rd dice:" + z;
+}
+
+//nested loop
+document.getElementById("myRect").onclick = function () {
+   let symbol = window.prompt("Enter symbol to use")
+   let rows = window.prompt("Enter number of rows");
+   let columns = window.prompt("Enter number of columns");
+   for(i = 1;i<=rows;i+=1){
+      for(j = 1;j<=columns;j+=1){
+         document.getElementById("myRectangle").innerHTML += symbol;
+      }
+      document.getElementById("myRectangle").innerHTML += "<br>";
+   }
 }
