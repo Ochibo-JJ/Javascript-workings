@@ -8,56 +8,71 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <!-- Calculating hypotenuse of a triangle -->
-    <div class="math">
-        <h1>Right-angled triangle</h1>
-        <p>Solve for <a href="#aTextbox">hypotenuse</a></p>
-        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SsN2DG__Z5DyOI0uf7hbwQ.png" alt="Pythagorus theorem">
-        <div class="triangle">
-            <label for="aTextbox" id="aLabel">Side A:</label><br>
-            <input type="text" id="aTextbox"><br>
-            <label for="bTextbox" id="bLabel">Side B:</label><br>
-            <input type="text" id="bTextbox"><br>
-            <button type="button" id="submitButton">Submit</button>
-            <label id="cLabel"></label>
-        </div>
+    <header>
+        <h1>JAVASCRIPT PROJECT</h1>
+    </header>
+    <main>
+        <!-- Calculating hypotenuse of a triangle -->
+        <div class="math">
+            <h1>Right-angled triangle</h1>
+            <p>Solve for <a href="#aTextbox">hypotenuse</a></p>
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SsN2DG__Z5DyOI0uf7hbwQ.png" alt="Pythagorus theorem">
+            <div class="triangle">
+                <label for="aTextbox" id="aLabel">Side A:</label><br>
+                <input type="text" id="aTextbox"><br>
+                <label for="bTextbox" id="bLabel">Side B:</label><br>
+                <input type="text" id="bTextbox"><br>
+                <button type="button" id="submitButton">Submit</button>
+                <label id="cLabel"></label>
+            </div>
 
-        <div class="circumference">
-            <h1>Circumference(perimeter) of a circle</h1>
-            <p>Solve for <a href="#radius">circumference</a></p>
-            <div class="circle">
-                <div class="radiusLine"><p>R</p></div>
+            <div class="circumference">
+                <h1>Circumference(perimeter) of a circle</h1>
+                <p>Solve for <a href="#radius">circumference</a></p>
+                <div class="circle">
+                    <div class="radiusLine"><p>R</p></div>
+                </div>
+                <div class="radCalc">
+                    <label for="radiusTextbox" id="radius">Enter radius:</label><br>
+                    <input type="text" id="radiusTextbox"><br>
+                    <button type="button" id="circCalc">Submit</button><br>
+                    <label id="circumfAns"></label>
+                </div>
             </div>
-            <div class="radCalc">
-                <label for="radiusTextbox" id="radius">Enter radius:</label><br>
-                <input type="text" id="radiusTextbox"><br>
-                <button type="button" id="circCalc">Submit</button><br>
-                <label id="circumfAns"></label>
-            </div>
+        </div><hr>
+        <!-- Counter program -->
+        <div class="counter">
+            <h1><i>Counter program</i></h1>
+            <h2>Set your age!</h2>
+            <label id="countLabel">0</label><br>
+            <button id="decreaseBtn">Decrease</button>
+            <button id="reset">Reset</button>
+            <button id="increaseBtn">Increase</button>
+            <button type="button" id="submitBtn">Submit</button>
+        </div><hr>
+        <!-- Roll a dice (use of random number generator) -->
+        <div class="dice">
+            <button type="button" id="rollButton">Roll 3 dice!</button>
+            <label id="xLabel"></label>
+            <label id="yLabel"></label>
+            <label id="zLabel"></label>
+        </div><hr>
+        <!-- Nested loop -->
+        <div class="nestedLoop">    
+            <button id="myRect">Create Rectangular Array</button>
+            <p id="myRectangle"></p>
+        </div><hr>
+        <div class="guessinggame">
+            <h1>Number guessing game</h1>
+            <p>Pick a random number between 1-10</p>
+            <label for="gameGuess">Enter value</label>
+            <input type="text" id="gameGuess">
+            <input type="submit" id="submitButn">
         </div>
-    </div><hr>
-    <!-- Counter program -->
-    <div class="counter">
-        <h1><i>Counter program</i></h1>
-        <h2>Set your age!</h2>
-        <label id="countLabel">0</label><br>
-        <button id="decreaseBtn">Decrease</button>
-        <button id="reset">Reset</button>
-        <button id="increaseBtn">Increase</button>
-        <button type="button" id="submitBtn">Submit</button>
-    </div><hr>
-    <!-- Roll a dice (use of random number generator) -->
-    <div class="dice">
-        <button type="button" id="rollButton">Roll 3 dice!</button>
-        <label id="xLabel"></label>
-        <label id="yLabel"></label>
-        <label id="zLabel"></label>
-    </div><hr>
-    <!-- Nested loop -->
-    <div class="nestedLoop">    
-        <button id="myRect">Create Rectangular Array</button>
-        <p id="myRectangle"></p>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

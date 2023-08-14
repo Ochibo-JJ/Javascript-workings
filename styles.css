@@ -1,10 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+}
+header{
+    width: 100%;
+    background-color: #a9e069;
+    margin: 0;
+    height: 200px;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 3em;
+}
+header h1::before{
+    text-decoration: ❗;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fee500cd;
+}
 /* Calculating hypotenuse */
 .math{
     border: 2mm ridge rgb(112, 112, 203);
     border-radius: 10px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 10px;
     width: 800px;
+    position: relative;
 }
 a{
     text-decoration: underline;
@@ -25,8 +52,8 @@ img{
 }
 .triangle{
     position: absolute;
-    top: 300px;
-    right: 250px;
+    top: 310px;
+    right: 20px;
 }
 p,label,input,button{
     font-size: 1.5em;
