@@ -77,3 +77,51 @@ document.getElementById("myRect").onclick = function () {
       document.getElementById("myRectangle").innerHTML += "<br>";
    }
 }
+
+//guessing game
+const answer = Math.floor(Math.random() * 100 + 1);
+let guesses = 0;
+document.getElementById("submitButn").onclick = function(){
+   let guess = document.getElementById("gameGuess").value
+   guesses+=1;
+   if (guess == answer) {
+      alert(`${guess} is the correct number. It took you ${guesses} guesses`);
+      if (guesses < 5) {
+         document.getElementById("genius").innerHTML = "You are a guessing genius!"
+      }else{
+         document.getElementById("genius").innerHTML = "You tried💔! Get another chance to be a guessing genius?"
+      }
+   }
+   else if (guess < answer) {
+      alert("Guess higher!");
+   }
+   else {
+      alert("Guess lower!");
+   }
+}
+
+//converting temperature
+document.getElementById("btnsub").onclick = function(){
+   let temp;
+   if (document.getElementById("celsiusTemp").checked) {
+      temp = document.getElementById("tempReading").value;
+      temp = Number(temp);
+      temp = toCelsius(temp);
+      temp = document.getElementById("convTemp").innerHTML = temp + "°C"
+   }
+   else if(document.getElementById("fahrenheitTemp").checked){
+      temp = document.getElementById("tempReading").value;
+      temp = Number(temp);
+      temp = toFahrenheit(temp);
+      temp = document.getElementById("convTemp").innerHTML = temp + "°F"
+   }
+   else{
+      document.getElementById("convTemp").innerHTML = "Select a unit!";
+   }
+}
+function toCelsius(temp){
+   return temp = (temp - 32) * (5/9);
+}
+function toFahrenheit(temp){
+   return temp = (temp * (9/5)) + 32;
+}

@@ -64,14 +64,29 @@
         </div><hr>
         <div class="guessinggame">
             <h1>Number guessing game</h1>
-            <p>Pick a random number between 1-10</p>
+            <p>Pick a random number between 1-100.</p>
+            <p>If you can get the right number within 5 guesses, you are a guessing GENIUS!!!</p>
             <label for="gameGuess">Enter value</label>
             <input type="text" id="gameGuess">
-            <input type="submit" id="submitButn">
-        </div>
+            <!--<input type="reset">make this reset button work-->
+            <input type="submit" id="submitButn"><br>
+            <p id="genius"></p>
+        </div><hr>
+        <!-- Converting temperature -->
+        <h1>Converting temperature</h1>
+        <label for="">Enter temperature</label>
+        <input type="text" id="tempReading"><br>
+        <label>Convert to:</label><br>
+        <input type="radio" name="unitTemp" id="celsiusTemp">
+        <label for="celsiusTemp">Celsius</label><br>
+        <input type="radio" name="unitTemp" id="fahrenheitTemp">
+        <label for="fahrenheitTemp">Fahrenheit</label><br>
+        <button type="button" id="btnsub">Convert</button><br>
+        <label id="convTemp"></label>
     </main>
     <footer>
-
+        <h2>A designed webpage by ochibo_jj</h2>
+        <p>&copy;Ochibo JJ</p>
     </footer>
     <script src="index.js"></script>
 </body>

@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffffff;
     margin: 0;
 }
 header{
@@ -22,7 +21,8 @@ header h1::before{
 main{
     width: 90%;
     margin: 0 auto;
-    background-color: #fee500cd;
+    background-color: powderblue;
+    padding: 10px;
 }
 /* Calculating hypotenuse */
 .math{
@@ -141,6 +141,7 @@ label#countLabel{
     display: block;
     margin-top: 15px;
 }
+
 /* nested loop */
 .nestedLoop{
     display: block;
@@ -155,4 +156,13 @@ label#countLabel{
 }
 p#myRectangle{
     color: forestgreen;
+}
+
+
+footer{
+    height: 200px;
+    background-color: #a9e069;
+    text-align: center;
+    color: white;
+    padding: 30px;
 }
