@@ -87,9 +87,9 @@ document.getElementById("submitButn").onclick = function(){
    if (guess == answer) {
       alert(`${guess} is the correct number. It took you ${guesses} guesses`);
       if (guesses < 5) {
-         document.getElementById("genius").innerHTML = "You are a guessing genius!"
+         document.getElementById("genius").innerHTML = "You are a guessing genius!😎"
       }else{
-         document.getElementById("genius").innerHTML = "You tried💔! Get another chance to be a guessing genius?"
+         document.getElementById("genius").innerHTML = "You tried💔! Retry to be a guessing genius?"
       }
    }
    else if (guess < answer) {
