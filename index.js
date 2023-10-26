@@ -19,7 +19,8 @@
         b = document.getElementById("bTextbox").value;
         b = Number(b);
         c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-        c = c.toLocaleString(undefined, {style: "unit", unit: "meter"});//toLocaleString statement
+        
+        c = c.toLocaleString(undefined, {style: "unit", unit: "meter"}); //toLocaleString statement
         document.getElementById("cLabel").innerHTML = "Hypotenuse is: " + c;
      }
 

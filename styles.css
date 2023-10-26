@@ -34,6 +34,11 @@ main{
     width: 800px;
     position: relative;
 }
+.triangle{
+    position: absolute;
+    top: 310px;
+    right: 20px;
+}
 a{
     text-decoration: underline;
     color:rgb(18, 96, 96);
@@ -50,11 +55,6 @@ img{
     display: inline-block;
     margin: 10px;
     position: relative;
-}
-.triangle{
-    position: absolute;
-    top: 1310px;
-    right: 20px;
 }
 p,label,input,button{
     font-size: 1.5em;
